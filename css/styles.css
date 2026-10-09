@@ -224,7 +224,24 @@ main h2 {
 /* -------------------- 6. Variables ------------------------- */
 
 
-/* -------------------- 7. Variables ------------------------- */
+/* -------------------- 7. Footer (Grid n Flexbox) ------------------------- */
+.site-footer {
+    background-color: var(--ink);
+    color: var(--white);
+    padding: 3.5rem 1.5rem 1.5rem;
+}
 
+.footer-bottom {
+    max-width: var(--max-width);
+    margin: 2.5rem auto 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
 
 /* -------------------- 8. Variables ------------------------- */
