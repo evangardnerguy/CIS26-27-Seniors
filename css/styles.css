@@ -139,7 +139,38 @@ main h2 {
     background-color: rgba(255, 255, 255, 0.12);
 }
 
+/* -------------------- Dropdown ------------------------ */
+.dropdown {
+    position: relative;
+}
 
+.submenu {
+    display: none !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: var(--ink);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+
+.submenu a {
+    font-weight: 400;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown:hover .submenu,
+.dropdown:has(:focus-visible) .submenu {
+    display: block !important;
+}
+
+.dropdown > a::after {
+    content: " \25BE";
+}
 
 /* -------------------- 4. About ------------------------- */
 .about {
